@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="eng">  
+    <head>
+       <title>Hospital</title>
+<style>
+    h2 { 
+         color: rgba(14, 29, 241, 0.74); 
+         text-align: right;
+      }
+
+     h3 { 
+         color: rgb(14, 10, 240);
+         text-align: center;
+      }
+
+
+ /*unvisited link */
+ a:link {
+    color: red;
+    text-decoration: none;
+ }
+
+ 
+      /*visited link */
+      a:visited {
+         color: green;
+         text-decoration: none;
+      }
+
+      /*mouse over link */
+      a:hover{
+         color: hotpink;
+         text-decoration: underline;
+      }
+
+      /* selected link */
+      a:active {
+         color: blue;
+         text-decoration: underline;
+      }
+
+      .hook{
+            background-color: rgb(174, 146, 226);
+            color: rgb(238, 236, 236);
+            padding: 30px;
+         }
+
+      .title{
+            background-color: rgb(87, 14, 223);
+            color: rgb(238, 236, 236);
+            padding: 30px;
+         }
+
+      .book{
+         background-color: rgb(87, 14, 223);
+         color: rgb(238, 236, 236);
+         padding: 30px;
+      }
+
+      .good{
+         background-color: rgb(9, 3, 22);
+         color: rgb(238, 236, 236);
+         padding: 30px;
+      }
+
+      .border {
+      
+
+            border-width: 1px;
+
+            border-color: rgb(248, 246, 246);
+
+            border-bottom-style: dotted;
+
+      }
+
+       h1 { 
+         color: rgba(11, 13, 31, 0.74); 
+         text-align: center;
+      }
+
+       p { 
+         color: rgba(248, 246, 248, 0.74); 
+         text-align: left;
+      }
+
+      .bush {
+         background-color: rgb(100, 97, 97);
+         color: white;
+         padding: 20px;
+      }
+
+      .lah p {
+         color: black;
+      }
+
+      .ha p {
+         text-align: center;
+      }
+
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  position: relative;
+}
+
+.logo {
+  color: #111111;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.menu-toggle {
+  display: block;
+  font-size: 28px;
+  color: rgb(14, 13, 13);
+  cursor: pointer;
+}
+
+/* Nav Links hidden by default on mobile */
+.nav-links {
+  list-style: none;
+  flex-direction: column;
+  background-color: #fcf9f9;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  display: none;
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+.nav-links li {
+  text-align: left;
+  padding: 10px 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(17, 16, 16);
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #9e9c9c;
+  border-radius: 5px;
+}
+
+/* ✅ Desktop Styles (768px and up) */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    position: static;
+    display: flex !important;
+    gap: 20px;
+    width: auto;
+  }
+
+  .nav-links li {
+    padding: 0;
+  }
+}
+
+button {
+   background-color: red;
+   padding: 10px 20px;
+   font-size: 20px;
+   border-radius: 10px;
+   border: none;
+   cursor: pointer;
+}
+
+.sub {
+   background-color: white;
+}
+
+</style>
+
+<head>
+
+  <nav class="navbar">
+    <div class="FCC"></div>
+    <img src="wdf"width="50px">
+    <div class="logo"><button type="submit">Book appointment</button></div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Home</a></li><br>
+      <li><a href="#">About</a></li><br>
+      <li><a href="#">Specialties</a></li><br>
+      <li><a href="#">Media</a></li><br>
+      <li><a href="#">Blog</a></li><br>
+      <li><a href="#">Contact Us</a></li><br>
+    </ul>
+  </nav>
+
+   <div class="good">
+     <h2>Experience Execptional<br>at Our Patient-
+     Center<br> Hospital</h2>
+   </div>
+   <hr><br>
+
+
+<div class="ha">
+<div class="hook">
+   <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   16<br></h1><p> Years of Experience</p>
+   
+   <h1>&nbsp;&nbsp;&nbsp;&nbsp;5000+</h1>
+   <p>Surgeries Performed</p>
+
+   <h1>&nbsp;&nbsp;&nbsp;&nbsp;300+</h1>
+   <p>Doctors and Staff</p>
+
+   <h1>&nbsp;&nbsp;&nbsp;20000+</h1>
+   <p>Patients Treated</p>
+</div>
+</div><br><br>
+
+<img src="image/hotel1.jpg"width="400px">
+
+<h1>FCC Healthcare</h1>
+
+<div class="lah">
+<p>
+   With a legacy spanning over a decade, we are<br>
+   dedicated to delivery the utmost quality <br>
+   comprehensive care in Nigeria. Through our<br>
+   innovative use of modern technology and<br>
+   unwavering commitment, we have set a<br>
+   bechmark in the healthcare industry.
+</p>
+
+<p>
+   Putting our patients at the forehead of everything<br>
+   we do, we established a thriving medical<br>
+   environment that is aimed at providing<br>
+   comprehensive care. Our unwavering commitment<br>
+   to exellence in healthcare sets us apart, as we<br>
+   strive to deliver outstanding medical Services each<br>
+   day.
+</p>
+
+<p>
+   At FCC Healthcare, we believe in the power of<br>
+   innovation to transform healthcare. By leveraging<br>
+   the latest advancements in technology, we ensure<br>
+   that our patients receive cutting-edge treatments<br>
+   and therapies. Our team is made up of highly<br>
+   skilled professionals who are dedicated to staying<br>
+   at the forefront of medical advancements,<br>
+   constantly expanding their knowledge and<br>
+   expertise to provide the best care possible.
+</p>
+
+<p>
+   We invite you to experience the exceptional care<br>
+   wevoffer at FCC Healthcare. Your health and well-<br>
+   being are our top priorities, and we committed<br>
+   tp prroviding you with the highest standrad of<br>
+   healthcare
+</p>
+</div>
+
+<img src="image/hotel6.jpg"width="300px">
+
+<h3>Our Clinical Team</h3>
+
+<img src="image/portfolio 3.jpg"width="200px">
+
+<div class="title">
+<h1>Healthcare for Today's<br>Executives</h1>
+
+<ul>
+    <li>The Executive Health Program has been designed<br>
+    to offer todays's executive access tp our prevventive<br>
+    care through a focused, efficient, and<br>
+    individualised experience. It works with the<br>
+    constraints of your busy schedule, offering you a<br>
+    seamless and customised care.</li>
+</ul>
+</div>
+
+
+<h3>Our Partners</h3>
+
+<img src="image/portfolio 4.jpg"width="200px">
+
+<h3>Take a Tour</h3>
+
+<h3>Our Blog</h3>
+
+<div class="book">
+   <p  class="border">(+234)808 211 4266</p>
+
+
+   <p class="border">(+234)817 573 1408</p>
+
+   <p class="border">(+234)916 984 9161</p>
+
+
+   <p class="border">info@firstcardiology.org</p>
+
+
+   <p class="border">20A, Thompson Avenue, Ikoyi</p>
+   <br><br>
+
+   <p class="border">Site Map</p>
+
+
+   <p class="border">Privacy Policy</p>
+
+
+   <p class="border">Terms and Condition</p>
+
+
+   <p class="border">Book Appointment</p>
+   <br><br><br>
+
+<label>
+   <label for="address">Enter Email</label><br>
+   <input type="text" id="email="><br><br>
+   
+   <button type="submit" class="sub">SUBSCRIBE NOW</button>
+</div>
+
+
+<div class="bush">
+   <p>2025 First Cardiology Consultants. All Rights Reserved.</p>
+</div>
+
+ </label>
+
+ <script>
+   const toggle = document.getElementById('menu-toggle');
+   const navLinks = document.getElementById('nav-links');
+
+   toggle.addEventListener('click', () => {
+   navLinks.classList.toggle('show');
+});
+ </script>
+
+    </body>
+</html>
